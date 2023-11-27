@@ -15,19 +15,22 @@ form {
     width: 50%;
     max-width: 400px;
     padding: 20px;
-    background-color: rgba(182, 182, 182, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-input[type="text"] {
+textarea {
     width: 100%;
+    height: 150px; /* Set an initial height */
     padding: 10px;
     box-sizing: border-box;
-    border: 2px solid #1c1919;
+    border: 2px solid #ccc;
     border-radius: 5px;
     background-color: transparent;
+    resize: none; /* Disable resizing by the user */
+    overflow-y: auto; /* Add scrollbar when content exceeds height */
 }
 
 input[type="submit"] {
