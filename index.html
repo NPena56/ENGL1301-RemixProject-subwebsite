@@ -2,24 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Remix Project</title>
-        <style class="style">
-            div{
-
-                color: rgb(11, 2, 44);
-            }
-        </style>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Remix Project</title>
 </head>
-
-
 <body>
-    <h1>Remix Project Draft</h1>
-    <br>
-    Insert Instructions
-    <h3>Insert TextBox</h3>
+    <div class="container">
+        <h1>Remix Project Draft</h1>
+        <div>
+             <form action="/submit" method="post">
+            <label for="textbox">Enter text:</label>
+            <input type="text" id="textbox" name="textbox"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        
+        
+
+       
+    </div>
 </body>
 </html>
