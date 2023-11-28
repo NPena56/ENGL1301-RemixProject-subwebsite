@@ -9,28 +9,36 @@
     <title>Remix Project</title>
     <script>
       document.getElementById('myForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const text = document.getElementById('textInput').value;
-  
-        try {
-          // Make a POST request to your Postman API endpoint
-          const response = await fetch('https://api.github.com/repos/NPena56/1301RemixProject/contents/responses/', {
-            method: 'PUT',
-            headers: {
-              'Content-Type': 'application/json',
-              // Add any other necessary headers, e.g., authentication headers
-            },
-            body: JSON.stringify({ text }),
-          });
-  
-          // Process the response as needed
-          const data = await response.json();
-          console.log('Response from Postman:', data);
-        } catch (error) {
-          console.error('Error:', error);
-        }
+          e.preventDefault();
+          const text = document.getElementById('textInput').value;
+
+          try {
+              // Make a PUT request to your GitHub repository API endpoint
+              const response = await fetch('https://api.github.com/repos/NPena56/1301RemixProject/contents/responses/' + generateRandomFileName() + '.txt', {
+                  method: 'PUT',
+                  headers: {
+                      'Authorization': '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', // Replace with your GitHub access token
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                      message: 'Create file',
+                      content: btoa(unescape(encodeURIComponent(text))), // Content should be base64 encoded
+                  }),
+              });
+
+              // Process the response as needed
+              const data = await response.json();
+              console.log('Response from GitHub:', data);
+          } catch (error) {
+              console.error('Error:', error);
+          }
       });
-    </script>
+
+      function generateRandomFileName() {
+          const randomString = Math.random().toString(36).substring(7); // Generate a random string
+          return 'response_' + randomString; // Adjust the filename prefix as needed
+      }
+  </script>
     
 </head>
 <body>
