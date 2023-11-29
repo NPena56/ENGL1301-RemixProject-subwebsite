@@ -31,7 +31,7 @@ const createFileInGitHubRepo = async (text) => {
     const GITHUB_API_URL = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`;
 
     const authHeaders = {
-        Authorization: `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`,
+        Authorization: ``,
         'Content-Type': 'application/json',
     };
 
