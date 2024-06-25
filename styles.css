@@ -10,6 +10,7 @@ body {
 	margin: 0; 
 	padding: 0; 
 	box-sizing: border-box; 
+	background: linear-gradient(to right, rgb(71, 70, 70)0%,rgb(119, 117, 170)100%,rgb(66, 66, 66)50%);
 } 
 
 nav { 
@@ -21,35 +22,10 @@ nav {
 	top: 0; 
 	left: 0; 
 	right: 0; 
-	background: white; 
-	padding-bottom: 10px; 
+	background-image:url(images/programming-pic.png);
 	z-index: 2; 
 } 
 
-#youtube-logo-container { 
-	margin-left: 75px; 
-} 
-
-#youtube-logo { 
-	width: 100px; 
-} 
-
-#search-bar { 
-	justify-self: center; 
-	width: 38vw; 
-	margin-top: 15px; 
-	height: 25px; 
-	padding: 2px; 
-	padding-left: 5px; 
-} 
-
-#icon-container { 
-	color: gray; 
-	margin-top: 15px; 
-	cursor: pointer; 
-	justify-self: flex-end; 
-	margin-right: 5px; 
-} 
 
 .fas { 
 	font-size: 20px; 
@@ -104,7 +80,7 @@ nav {
 } 
 
 .material-icons { 
-	color: rgb(99, 95, 94); 
+	color: rgb(226, 66, 26); 
 } 
 
 #home-icon { 
@@ -113,7 +89,7 @@ nav {
 
 .side-bar-titles { 
 	text-decoration: none; 
-	color: rgb(53, 50, 49); 
+	color: rgb(0, 0, 0); 
 	font-size: 15px; 
 	position: absolute; 
 	top: 5%; 
@@ -258,6 +234,11 @@ footer p {
 	height: 25px;
 }
 
+.logo-header {
+	width: auto;
+	height: 75px;
+}
+
 
 @media all and (max-width: 255px) { 
 	.video-description { 
@@ -293,7 +274,5 @@ footer p {
 		margin-left: 0; 
 	} 
 
-	#youtube-logo-container { 
-		margin-left: 0; 
-	} 
+
 }
