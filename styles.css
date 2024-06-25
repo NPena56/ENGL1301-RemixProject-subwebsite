@@ -253,6 +253,11 @@ footer p {
 	margin-right: 20px; 
 } 
 
+.logo {
+	width: auto;
+	height: 25px;
+}
+
 
 @media all and (max-width: 255px) { 
 	.video-description { 
