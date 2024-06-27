@@ -26,6 +26,30 @@ nav {
 	z-index: 2; 
 } 
 
+table{
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+td{
+	border: 5px solid black;
+	justify-items: center;
+}
+
+.buttonLandingPage {
+    padding: 9px 25px;
+    background-color: rgba(95, 93, 93, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.logoHome{
+    padding: 10px;
+    background-color: #00000000;
+}
+
 
 .fas { 
 	font-size: 20px; 
