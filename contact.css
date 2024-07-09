@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap');
+
+
+ *{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0
+;
+
+}
+body{
+    background: linear-gradient(to right, rgb(71, 70, 70)0%,rgb(119, 117, 170)100%,rgb(66, 66, 66)50%);
+}
+
+li,a,button,.table{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    color:rgb(29, 29, 29);
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+   background-image:url(sub/programming-pic.png);
+   background-color: rgb(101, 84, 148);
+   background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logoHome{
+    padding: 10px;
+    background-color: #00000000;
+}
+
+.logoHome:hover{
+    background-color: #00000000;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav__links li a:hover{
+   color:rgb(39, 85, 107)
+}
+
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(187, 187, 187);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(187, 187, 187,0.7);
+}
+
+
+div{
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.mainwrapper{
+    width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.paragraph{
+    padding : 10px;
+    padding-left : 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.paraHead{
+    padding : 10px;
+    padding-left : 25px;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    background-color: rgb(39, 39, 39);
+}
+
+.title{
+    padding : 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    background-color: rgb(39, 39, 39);
+}
