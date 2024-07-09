@@ -32,7 +32,9 @@ table{
 	margin-top: 200px;
 }
 
-
+p,h1 {
+	margin-left: 50px;
+}
 
 .buttonLandingPage {
     padding: 9px 25px;
@@ -41,6 +43,24 @@ table{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+.buttonHome{
+    padding: 9px 25px;
+    background-color: rgb(187, 187, 187);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+	margin-right:  50px
+}
+
+button:hover{
+    background-color: rgba(187, 187, 187,0.7);
+}
+
+buttondiv {
+	margin-left: 220px;
 }
 
 .logoHome{
